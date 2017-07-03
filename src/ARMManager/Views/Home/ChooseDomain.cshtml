@@ -1,0 +1,10 @@
+﻿@model ARMManager.ViewModels.DomainChoosingViewModel
+    
+@{
+    ViewData["Title"] = "Domain Choosing";
+}
+
+<form asp-controller="Home" asp-action="ChooseDomain" method="post" role="form">
+    <input asp-for="Domain" />
+    <button type="submit">Register</button>
+</form>

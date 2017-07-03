@@ -1,0 +1,12 @@
+﻿@Model List<ARMManager.Model.Subscription>
+
+@{
+    ViewData["Title"] = "Subscriptions";
+}
+<h2>@ViewData["Here is a list of your subscriptions"].</h2>
+
+@foreach (var subscription in Model)
+{
+    <h3>@subscription.displayName</h3>
+    <p>@subscription.subscriptionId</p>
+}
